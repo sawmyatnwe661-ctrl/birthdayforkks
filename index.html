@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Ko Kaung Sike 💙</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg,#061326,#102c50,#07162d);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+#stars {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+}
+
+.star {
+    position: absolute;
+    color: #f7d88b;
+    animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+    from { opacity: .2; transform: scale(.7); }
+    to { opacity: 1; transform: scale(1.3); }
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 65px 10px;
+}
+
+.small {
+    color: #e8c77c;
+    letter-spacing: 4px;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-size: clamp(38px, 9vw, 58px);
+    color: #f5d88e;
+}
+
+.subtitle {
+    color: #d5dfed;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.photo-frame {
+    width: 230px;
+    margin: 30px auto;
+    padding: 8px;
+    border-radius: 22px;
+    background: linear-gradient(135deg,#fff0b8,#bd8a35,#fff0b8);
+    box-shadow: 0 0 30px #e8c77c66;
+    animation: appear 1.5s ease;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+
+.caption {
+    color: #07152d;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s;
+}
+
+button:hover {
+    transform: translateY(-4px);
+}
+
+.main-btn {
+    margin-top: 25px;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg,#f5d88e,#c99b43);
+    color: #07152d;
+    font-weight: 600;
+}
+
+#surprise {
+    display: none;
+    margin-top: 40px;
+    animation: appear 1s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cake {
+    font-size: 85px;
+    margin: 20px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    50% { transform: translateY(-12px); }
+}
+
+h2 {
+    color: #f5d88e;
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.message {
+    color: #e1e9f4;
+    font-size: 14px;
+    line-height: 2.2;
+    margin: 20px auto;
+}
+
+.card {
+    background: #ffffff0d;
+    border: 1px solid #e8c77c66;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.letter-btn {
+    padding: 12px 25px;
+    background: transparent;
+    border: 1px solid #e8c77c;
+    color: #f5d88e;
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+.letter {
+    display: none;
+    color: #f4e8ca;
+    font-family: 'Playfair Display', serif;
+    line-height: 2.2;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+#final {
+    display: none;
+    margin-top: 40px;
+    animation: appear 1s ease;
+}
+
+.name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px,8vw,48px);
+    color: #ffdf91;
+    margin: 25px 0;
+    text-shadow: 0 0 10px #f5d88e, 0 0 35px #e5b94d;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    to {
+        text-shadow: 0 0 20px #f5d88e, 0 0 50px #e5b94d;
+    }
+}
+
+.floating {
+    position: fixed;
+    bottom: -30px;
+    font-size: 22px;
+    animation: floatUp 7s linear forwards;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.footer {
+    margin-top: 55px;
+    font-size: 11px;
+    color: #aab9cf;
+    letter-spacing: 2px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="stars"></div>
+
+<div class="container">
+    <p class="small">A LITTLE SURPRISE FOR YOU ✨</p>
+
+    <h1>Happy Birthday!</h1>
+
+    <p class="subtitle">
+        Today is a special day<br>
+        for someone special. 💙
+    </p>
+
+    <div class="photo-frame">
+        <img src="ks.jpg" alt="Birthday Star">
+        <div class="caption">THE BIRTHDAY STAR ✨</div>
+    </div>
+
+    <button class="main-btn" id="startBtn" onclick="openSurprise()">
+        Open Your Surprise 🎁
+    </button>
+
+    <div id="surprise">
+
+        <div class="cake">🎂</div>
+
+        <h2>Happy Birthday, Ko Kaung Sike! 💙</h2>
+
+        <p class="message">
+            Another beautiful year begins today.<br>
+            May your days be filled with happiness,<br>
+            laughter, love and countless blessings.<br>
+            May all your dreams come true. ✨
+        </p>
+
+        <div class="card">
+
+            <h2>A Little Letter 💌</h2>
+
+            <p>There's something special for you...</p>
+
+            <button class="letter-btn" onclick="openLetter()">
+                Open My Letter ♡
+            </button>
+
+            <div class="letter" id="letter">
+
+                To my dearest and respected Ko Kaung Sike... 💙
+I hope today will be an especially wonderful and memorable day for you.
+As you begin another beautiful year of your life, may it be filled with endless happiness, countless blessings, and beautiful moments. May all the dreams you've been wishing for eventually come true, one by one.
+Even when life gets difficult and exhausting at times, I hope you always find the strength and courage to overcome every challenge that comes your way.
+I want you to know that even without realizing it, your smile has the power to make someone else's day a little brighter and more beautiful.
+On your special day, my wishes for you are simple: May you always be healthy, happy, and at peace. May you always be surrounded by the people you love and cherish.
+May countless wonderful things find their way into your life.
+And lastly, there's one more thing I want to say...
+Out of all the millions of people in this world, getting the chance to know someone as special as you is truly a beautiful memory to treasure.
+From this birthday onward, may every day of your life become even more beautiful than the day before.
+Wishing you the happiest birthday, Ko Kaung Sike! 💙
+With lots of warm wishes... 🌷
+
+            </div>
+        </div>
+
+        <button class="main-btn" onclick="showFinal()">
+            One Last Surprise ✨
+        </button>
+
+        <div id="final">
+
+            <p class="subtitle">
+                This little surprise is specially for...
+            </p>
+
+            <div class="name" id="nameReveal"></div>
+
+            <p>
+                There's one thing I want you to always remember...
+You are someone truly special to someone, far beyond just being an ordinary person.
+May the smile on your face never fade away.
+Keep smiling, keep shining.
+Happy Birthday, Ko Kaung Sike! 💙🎂
+            </p>
+
+            <div style="font-size:38px">
+                💙 ✨ 🌷 🎂
+            </div>
+
+            <h2>Happy Birthday! 🎉</h2>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        MADE WITH ♡ JUST FOR YOU
+    </div>
+
+</div>
+
+<script>
+
+// Stars
+const stars = document.getElementById("stars");
+
+for(let i=0; i<85; i++) {
+    let star = document.createElement("span");
+    star.className = "star";
+    star.innerHTML = "✦";
+    star.style.left = Math.random()*100 + "%";
+    star.style.top = Math.random()*100 + "%";
+    star.style.fontSize = (Math.random()*11+5)+"px";
+    star.style.animationDelay = Math.random()*3+"s";
+    stars.appendChild(star);
+}
+
+// Floating decorations
+function createFloating() {
+    const icons = ["💙","✨","🌷","♡","⭐"];
+
+    for(let i=0; i<22; i++) {
+        let item = document.createElement("div");
+        item.className = "floating";
+        item.innerHTML = icons[Math.floor(Math.random()*icons.length)];
+        item.style.left = Math.random()*100+"vw";
+        item.style.animationDuration = (5+Math.random()*4)+"s";
+
+        document.body.appendChild(item);
+
+        setTimeout(() => item.remove(),9000);
+    }
+}
+
+// Open surprise
+function openSurprise() {
+    document.getElementById("surprise").style.display = "block";
+    document.getElementById("startBtn").style.display = "none";
+
+    createFloating();
+
+    setTimeout(() => {
+        document.getElementById("surprise").scrollIntoView({
+            behavior:"smooth"
+        });
+    },100);
+}
+
+// Open letter
+function openLetter() {
+    const letter = document.getElementById("letter");
+    letter.style.display = "block";
+
+    createFloating();
+
+    letter.scrollIntoView({
+        behavior:"smooth",
+        block:"center"
+    });
+}
+// Final surprise
+function showFinal() {
+    const final = document.getElementById("final");
+    final.style.display = "block";
+
+    const name = "Ko Kaung Sike";
+    const reveal = document.getElementById("nameReveal");
+
+    reveal.innerHTML = "";
+
+    let i = 0;
+
+    function typeName() {
+        if(i < name.length) {
+            reveal.innerHTML += name.charAt(i);
+            i++;
+            setTimeout(typeName,170);
+        }
+    }
+
+    typeName();
+    createFloating();
+
+    final.scrollIntoView({
+        behavior:"smooth"
+    });
+}
+
+</script>
+<!-- Auto Play Background Music -->
+<audio id="bgMusic" autoplay loop>
+  <source src="ks.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const music = document.getElementById("bgMusic");
+music.volume = 0.5;
+
+function startMusic() {
+    music.play().catch(error => {
+        console.log("Music error:", error);
+    });
+
+    document.removeEventListener("click", startMusic);
+    document.removeEventListener("touchstart", startMusic);
+}
+
+document.addEventListener("click", startMusic);
+document.addEventListener("touchstart", startMusic);
+</script>
+</script>
+</body>
+</html>
